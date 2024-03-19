@@ -1,3 +1,4 @@
-logs/*
-cmake-build-debug
-.idea
+/.idea/
+/cmake-build-debug/
+/logs/
+/main.exe

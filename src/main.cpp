@@ -2,7 +2,7 @@
 #include <vector>
 #include <map>
 
-#define MEASUREMENT 100
+#define MEASUREMENT 2
 
 #include "../include/algorithms/mergesort.h"
 #include "../include/algorithms/quicksort.h"
@@ -115,7 +115,10 @@ int main(int argc, char* argv[]) {
     results[100000] = &timeResultsC;
     results[1000000] = &timeResultsD;
 
-    sec(algoritms, results);
+    first(algoritms, results);
+
+
+    //sec(algoritms, results);
 
     return 0;
 }

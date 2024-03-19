@@ -11,15 +11,12 @@
 #include <ctime>
 #include <iomanip>
 #include <random>
+#include <limits>
 
 #include "../include/algorithms/introsort.h"
 #include "../include/algorithms/mergesort.h"
 #include "../include/algorithms/quicksort.h"
 #include "../include/algorithms/heapsort.h"
-
-
-#define MIN (-100)
-#define MAX 100
 
 class Experiment {
 public:
@@ -30,7 +27,7 @@ public:
     static std::vector<int> generateArray(const int size) {
         std::random_device rd;
         std::mt19937 gen(std::random_device{}());
-        std::uniform_int_distribution<int> dist(MIN, MAX);
+        std::uniform_int_distribution<int> dist(INT_MIN, INT_MAX);
         std::vector<int> numbers;
 
         for (int i = 0; i < size; ++i) {
